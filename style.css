@@ -1,0 +1,7 @@
+#nav-bgImg {
+    /* height: 100vh; */
+    background-image: linear-gradient(rgba(4, 7, 34, 0.952), rgba(0, 0, 0, 0.082)), url(./nice-building.jpg);
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* background-size: cover; , url(./nice-building.jpg)*/
+}
