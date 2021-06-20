@@ -1,7 +1,44 @@
 #nav-bgImg {
     /* height: 100vh; */
-    background-image: linear-gradient(rgba(4, 7, 34, 0.952), rgba(0, 0, 0, 0.082)), url(./nice-building.jpg);
+    background-image: linear-gradient(rgb(3, 184, 240), rgba(17, 198, 248, 0.589)), url(./nice-building.jpg);
     /* background-repeat: no-repeat;
     background-position: center; */
     /* background-size: cover; , url(./nice-building.jpg)*/
+}
+
+#logo {
+    color: rgb(47, 255, 82);
+}
+
+#tog {
+    background-color: black !important;
+    border: solid black !important;
+}
+
+.content {
+    position: relative;
+}
+
+#option-i,
+#option-ii {
+    position: absolute;
+    z-index: 1;
+}
+
+#service-btn:hover {
+    background-color: rgb(5, 228, 105);
+    color: white;
+    border: none;
+    font-size: x-large;
+}
+
+#all-width {
+    position: relative;
+    margin: auto 5%;
+    gap: 10%;
+}
+
+#txt-width {
+    position: relative;
+    font-size: 3em !important;
 }

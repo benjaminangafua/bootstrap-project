@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Finance Template</title>
 
@@ -13,14 +14,16 @@
 </head>
 
 <body>
-    <div id="nav-bgImg" class="bg-info text-white">
+    <div id="nav-bgImg" class="text-white">
         <!-- Nav bar -->
-        <nav class="navbar navbar-expand-sm navbar-dark py-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">EasyLo.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenue" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-md navbar-dark py-3" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1><i id="logo" class="bi bi-bank"></i> EasyLo.</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenue" aria-controls="navbarSupportedContent">
+                <span id="tog" class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navmenue">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -46,65 +49,158 @@
             </div>
         </nav>
         <!-- ShowCase -->
-        <section class="p-5 text-center text-sm-start">
+        <section class="pb-5 text-light text-center text-sm-start">
             <div class="container">
-                <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="d-sm-flex align-items-center justify-content-sm-between" id="all-width">
                     <div>
-                        <h1 class="text-50">
-                            The Simple <span class="text-warning"> online home loan</span>
+                        <h1 class="text-50" id="txt-width">
+                            The Simple online home loan
                         </h1>
-                        <p class="lead my-4">
+                        <p class="h4 my-4">
                             Financial uncertainty is haard on employees, and causes even.
                         </p>
-                        <button class="btn btn-light btn-lg">Our Service</button>
+                        <button type="button" class="btn btn-outline-light" id="service-btn">OUR SERVICE</button> <br>
                     </div>
-                    <div class="card" style="width:27rem;">
-                        <div class="card-body text-center text-dark py-5 px-4">
+                    <div class="card mt-4">
+                        <div class="card-body text-center text-dark py-5 px-4 mx-sm-0">
                             <h2>How much you want?</h2>
                             <p>We provide online instant cash loans</p>
                             <hr style="border:groove rgb(7, 245, 7);">
-                            <div class="container text-start">
-                                <div class="mb-3 text-start">
-                                    <label for="formGroupExampleInput" class="form-label">AMOUNT YOU WANT</label>
-                                    <select class="form-select form-select-lg mb-3" id="formGroupExampleInput">
-                                    <option selected>Select Amount</option>
-                                    <option value="$100">$100</option>
-                                    <option value="$200">$200</option>
-                                    <option value="$300">$300</option>
-                                  </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="formGroupExampleInput" class="form-label">MONTH</label>
-                                    <select class="form-select form-select-lg mb-3" id="formGroupExampleInput">
-                                    <option selected>Select Month</option>
-                                    <option value="1">JANUARY</option>
-                                    <option value="2">FEBRUARY</option>
-                                    <option value="3">MARCH</option>
-                                  </select>
-                                </div>
+                            <!--  -->
+                            <div class="accordion text-dark text-start" id="accordionFlush">
+                                <label for="option-1" class="text-muted py-3" style="font-size: smaller;"> AMOUNT YOU WANT</label>
+                                <div class="accordion-item">
 
+                                    <h2 class="accordion-header" id="option-1">
+                                        <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#option-i" aria-expanded="false" aria-controls="option-i">
+                                            Select Amount 
+                                        </button>
+                                    </h2>
+                                    <div id="option-i" class="accordion-collapse collapse" aria-labelledby="option-1" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body text-start w-100" style="background-color: aqua; list-style: none;">
+                                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion 2 -->
+                                <label for="option-2" class="py-3 text-muted" style="font-size: smaller;">MONTH</label>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="option-2">
+                                        <button class="accordion-button collapsed p-2" type="button" data-bs-toggle="collapse" data-bs-target="#option-ii" aria-expanded="false" aria-controls="option-ii">
+                                            Select Month </button>
+                                    </h2>
+                                    <div id="option-ii" class="accordion-collapse collapse" aria-labelledby="option-2" data-bs-parent="#accordionFlush">
+                                        <div class="accordion-body text-start w-100" style=" position: relative; background-color: aqua;list-style: none;">
+
+                                            <li><a class="dropdown-item" href="#">card</a></li>
+                                            <li><a class="dropdown-item" href="#">Week</a></li>
+                                            <li><a class="dropdown-item" href="#">Days 3</a></li>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <br>
+                            <div class="text-start pb-4"><small>YOU HAVE TO PAY:</small>
+                                <B class="text-info">$0</B> </div>
                             <button type="button" id="apply-loan" class="w-100 btn btn-lg btn-success">APPLY NOW</button>
 
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
+        </section>
+        </div>
+        <!-- Solution for business needed -->
+        <section class="text-success text-center p-5">
+            <div>
+                <h1>Solution for business need</h1>
+                <hr style="border-color: solid rgb(2, 22, 2); padding: 0.1em;">
+                <p>The brochure must grab a viewer's attention and hold it long enough to deliver the pertinent information</p>
             </div>
         </section>
-    </div>
-    <!-- Solution for business needed -->
-    <section>
-        <div>
-            <h1>Solution for business need</h1>
-            <hr style="border-color: green;">
-            <p>The brochure must grab a viewer's attention and hold it long enough to deliver the pertinent information</p>
-        </div>
 
-    </section>
+        <section>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-start">
+                                <img src="" alt="">
+                                <p class="card-title mb-3 h3 ">
+                                    What are my options and the cost to exercise?
+                                </p>
+                                <p> Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-start">
+                                <img src="" alt="">
+                                <p class="card-title mb-3 h3 ">
+                                    Should I exercise now or later? How can I afford it?
+                                </p>
+                                <p>
 
-    <script type="text/javascript" src="./bootstrap.min.js"></script>
-    <script type="text/javascript" src="./script.js"></script>
+
+                                    Tools such as a profit and tax calculator show the value of your stock options and exercise cost. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-start">
+                                <img src="" alt="">
+                                <p class="card-title mb-3 h3 ">
+                                    I own my shares - can I get liquidity now without selling?
+                                </p>
+                                <p> Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <section class="p-4 bg-secondary">
+            <div class="container">
+                <div class="row g-5">
+
+                    <div class="col-lg-6">
+                        <div class="card  bg-transparent">
+                            <div class="card-body text-start">
+                                <img src="" alt="">
+                                <p class="card-title mb-3 h3 ">
+                                    What are my options and the cost to exercise?
+                                </p>
+                                <p> Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card  bg-transparent">
+                            <div class="card-body text-start">
+                                <img src="" alt="">
+                                <p class="card-title mb-3 h3 ">
+                                    What are my options and the cost to exercise?
+                                </p>
+                                <p> Tools such as a profit and tax calculator show the value of your stock options and exercise cost.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <script type="text/javascript" src="./bootstrap.min.js"></script>
+        <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
