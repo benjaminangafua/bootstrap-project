@@ -54,10 +54,18 @@
 
 .img-side-txt>li::before {
     content: "\2022";
-    color: rgb(9, 252, 9);
+    color: rgb(5, 202, 169);
     font-weight: bold;
     display: inline-block;
-    font-size: xx-large;
+    font-size: 2em;
     width: 1em;
     margin-left: -1em;
+}
+
+.h1-txt {
+    color: rgb(23, 59, 45);
+}
+
+.complex-img {
+    background-color: rgba(167, 169, 170, 0.253);
 }
