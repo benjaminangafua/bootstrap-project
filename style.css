@@ -69,3 +69,9 @@
 .complex-img {
     background-color: rgba(167, 169, 170, 0.253);
 }
+
+.floating-div {
+    /* margin-right: -10%; */
+    margin-bottom: -5%;
+    position: sticky;
+}
