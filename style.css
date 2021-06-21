@@ -47,3 +47,17 @@
     position: relative;
     font-size: 3em !important;
 }
+
+.img-side-txt>li {
+    list-style: none;
+}
+
+.img-side-txt>li::before {
+    content: "\2022";
+    color: rgb(9, 252, 9);
+    font-weight: bold;
+    display: inline-block;
+    font-size: xx-large;
+    width: 1em;
+    margin-left: -1em;
+}
