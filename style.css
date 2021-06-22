@@ -6,11 +6,17 @@
     /* background-size: cover; , url(./nice-building.jpg)*/
 }
 
+.nav-stick-top-10 {
+    position: sticky;
+    background-color: darkcyan;
+    /* top: 10px; */
+}
+
 #logo {
     color: rgb(47, 255, 82);
 }
 
-#tog {
+#toggle-color {
     background-color: black !important;
     border: solid black !important;
 }
@@ -25,6 +31,12 @@
     z-index: 1;
 }
 
+#online-home-width {
+    position: relative;
+    margin: auto 5%;
+    gap: 10%;
+}
+
 #service-btn:hover {
     background-color: rgb(5, 228, 105);
     color: white;
@@ -37,13 +49,7 @@
     color: rgb(0, 255, 179);
 }
 
-#all-width {
-    position: relative;
-    margin: auto 5%;
-    gap: 10%;
-}
-
-#txt-width {
+#simple-Online-width {
     position: relative;
     font-size: 3em !important;
 }
@@ -71,7 +77,7 @@
 }
 
 .floating-div {
-    /* margin-right: -10%; */
-    margin-bottom: -5%;
+    padding: 8%;
+    margin: auto -13px -15px;
     position: sticky;
 }
