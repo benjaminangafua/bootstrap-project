@@ -3,7 +3,7 @@
 }
 
 #nav-bgImg {
-    background-image: linear-gradient(rgb(10, 159, 179), rgba(11, 215, 230, 0.505)), url(./nice-building.jpg);
+    background-image: linear-gradient(rgb(41, 192, 212), rgba(65, 215, 226, 0.76)), url(./nice-building.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
